@@ -3,9 +3,12 @@ import axios from 'axios';
 const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE_URL = 'https://api.themoviedb.org/3';
 
-// Backend API client (connects to http://localhost:3000)
+// Use an environment variable for the backend URL, defaulting to localhost for local work
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000/api';
+
+const BACKEND_URL="https://thundarshow.vercel.app/api"
 export const backend = axios.create({
-  baseURL: 'https://thundarshow.vercel.app/',
+  baseURL: BACKEND_URL,
   withCredentials: true,
 });
 
