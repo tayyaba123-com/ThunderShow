@@ -5,7 +5,7 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 
 // Backend API client (connects to http://localhost:3000)
 export const backend = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: 'https://thundarshow.vercel.app/',
   withCredentials: true,
 });
 
