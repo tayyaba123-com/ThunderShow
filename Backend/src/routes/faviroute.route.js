@@ -7,6 +7,7 @@ const router = express.Router();
 
 // Get favorites
 router.get("/", authUser, async (req, res) => {
+ 
   const favorites = await Favorite.find({ user_id: req.user.id });
 
   res.json(favorites);

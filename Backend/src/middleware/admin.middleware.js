@@ -1,5 +1,5 @@
 export const isAdmin = (req, res, next) => {
-    console.log(req.user)
+   
     // 1. Check if user exists (was passed by the previous auth middleware)
     if (!req.user) {
         return res.status(401).json({ message: "Unauthorized: No user found" });

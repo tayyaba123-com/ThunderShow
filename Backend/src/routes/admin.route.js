@@ -8,7 +8,7 @@ const router = express.Router();
 
 // Get users
 router.get("/users", authUser,isAdmin, async (req, res) => {
-  // console.log(req.user)
+  
   if (req.user.role !== "admin") {
     return res.status(403).json({ error: "Forbidden" });
   }
@@ -16,7 +16,7 @@ router.get("/users", authUser,isAdmin, async (req, res) => {
   const users = await User.find();
 
   res.json(users);
-  // console.log(users)
+ 
 });
 
 // Delete user

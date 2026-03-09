@@ -16,9 +16,9 @@ export const Navbar = () => {
         <div className="flex items-center gap-8">
           <Link
             to="/"
-            className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-red-400 bg-clip-text text-transparent"
           >
-            CINESTREAM
+             THUNDER SHOW
           </Link>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
             <Link to="/" className="hover:text-white transition-colors flex items-center gap-2">
@@ -48,7 +48,7 @@ export const Navbar = () => {
               </Link>
               <div className="group relative">
                 <button className="flex items-center gap-2 p-1 pr-3 hover:bg-white/10 rounded-full transition-colors">
-                  <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-sm font-bold">
+                  <div className="w-8 h-8 rounded-full bg-blue-700 flex items-center justify-center text-sm font-bold">
                     {user.email[0].toUpperCase()}
                   </div>
                   <span className="text-sm font-medium hidden sm:inline">{user.email.split('@')[0]}</span>

@@ -41,11 +41,11 @@ const AppContent = () => {
 
       <footer className="py-12 border-t border-white/10 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent mb-4">
-            CINESTREAM
+          <p className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-red-400 bg-clip-text text-transparent mb-4">
+            THUNDER SHOW
           </p>
           <p className="text-gray-500 text-sm">
-            © 2026 CineStream. All rights reserved. Powered by TMDB API.
+            © 2026  THUNDER SHOW. All rights reserved. Powered by TMDB API.
           </p>
         </div>
       </footer>
