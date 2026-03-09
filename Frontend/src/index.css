@@ -13,6 +13,7 @@
   /* Custom Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
+    color:red;
   }
 
   ::-webkit-scrollbar-track {
