@@ -32,6 +32,7 @@ app.use("/api/favorites", favoriteRoutes)
 app.use("/api/history", historyRoutes)
 
 app.use(express.static("./public"))
+
 app.use('*name',(req,res)=>{
     res.sendFile(path.join(__dirname,"..","public/index.html"))
 })
